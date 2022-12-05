@@ -1,0 +1,120 @@
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+.common-inner{
+    width: 1152px;
+    margin: 0 auto;
+}
+
+body{
+    font-size: 14px;
+    font-weight: 400;
+    color: #222;
+    letter-spacing: -0.05em;
+}
+
+h1,h2,h3,strong,b{font-weight: 700;}
+
+
+
+.btn-top{ 
+    position: fixed; opacity: 1;
+     left: 50%; margin-left: 600px;
+    bottom: -100px;
+    visibility: hidden;
+    z-index: 1000;
+    transition: 1s;
+}
+.btn-top.active{
+    bottom: 98px;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/* sp-bg1 (공용) */
+.group-flex1 .logo,
+.btn-search,
+.cs-area .call-box,
+.sc-board .link-plus,
+.sc-news .link-plus .ic-plus,
+.sc-support .btn-nav.prev,
+.sc-support .btn-nav.next,
+.sc-support .autoplay.play,
+.sc-support .autoplay.stop,
+.group-slide .btn-nav.prev,
+.group-slide .btn-nav.next,
+.group-slide .autoplay.active,
+.group-slide .autoplay
+    {
+    background-image: url('../images/sp-bg1.png');
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+}
+
+
+/* sp-bg2 sns */
+.footer .sns-box .facebook,
+.footer .sns-box .twiter,
+.footer .sns-box .insta,
+.footer .sns-box .kakao,
+.footer .sns-box .youtube,
+.footer .sns-box .blog
+    {
+        background-image: url('../images/sb-bg2.png');
+        background-repeat: no-repeat;
+        background-size: 175px 50px;
+}
+
+
+/* sp-bg3 service */
+.sc-service .public,
+.sc-service .answer,
+.sc-service .job,
+.sc-service .realestate,
+.sc-service .portal,
+.sc-service .welfare,
+.sc-service .house,
+.sc-service .young,
+.sc-service .mediahub,
+.sc-service .democracy,
+.sc-service .council
+    {
+        background-image: url('../images/sb-bg3.png');
+        background-repeat: no-repeat;
+        background-size: 1200px 60px;
+}
+
+
+
+/* sp-bg4 seoul-sns */
+.sc-sns .sns-item .insta,
+.sc-sns .sns-item .facebook,
+.sc-sns .sns-item .twiter,
+.sc-sns .sns-item .blog,
+.sc-sns .sns-item .youtube,
+.sc-sns .sns-item .kakao
+    {
+        background-image: url('../images/sp-bg4.png');
+        background-repeat: no-repeat;
+        background-size: 280px 40px;
+}
+
+
+/* sp-bg5 주요뉴스,시민참여 */
+.sc-slide .group-slide.slide1 .ic,
+.sc-slide .group-slide.slide2 .ic
+    {
+        background-image: url('../images/sp-bg5.png');
+        background-repeat: no-repeat;
+        background-size: 300px 300px;
+
+}

@@ -1,0 +1,104 @@
+@import './typo.css';
+@import './reset.css';
+@import './common.css';
+
+
+/* header */
+.group-flex1{ position: relative; display: flex; height: 48px; font-weight: 700; }
+
+/* 로고 */
+.group-flex1 .logo{ content: ''; display: block; width: 105px; height: 27px; background-position: -5px -165px; margin-top: 8px; }
+
+/* utill 영역 */
+.group-flex1 .util-area{ position: absolute; right: 0px; top: 50%; transform: translateY(-50%); display: flex; }
+.group-flex1 .util-area .link-util{ padding: 0 10px; }
+.group-flex1 .util-area .link-util:hover{color: #2292e9;}
+
+/* gnb 메뉴 영역 */
+.gnb{position: relative; left: 63px; font-size: 16px;}
+.gnb-list{ display: flex; gap: 20px; position: absolute; top: 50%; transform: translateY(-50%);}
+.gnb-list .gnb-item:hover{ color: #2292e9; }
+
+
+
+.group-flex2{ position: relative; height: 119px; display: flex; }
+
+/* 슬로건 영역 */
+.slogan-area{ background-image: url('../images/slogan.png'); background-repeat: no-repeat; width: 133px; height: 51px; margin: 38px 0 30px; }
+
+/* 검색 영역 */
+.search-area{ position: absolute; left: 50%; margin-left: -326px; top: 40px; }
+.search-area fieldset{ top: 0; display: flex;  width: 520px; height: 42px; border: 3px solid #2292e9;}
+.search-box{ width: 472px; height: 38px; line-height: 38px; border: 0; padding: 0 10px; background: none; }
+.search-area input::placeholder{color: #2292e9;}
+.tab-type{ position: absolute; top: 12px; right: 42px; margin-left: 3px; vertical-align: middle; }
+.btn-search{ content: ''; display: inline-block; width: 36px; height: 36px; padding: 0; background-position: -32px -97px; position: absolute; right: 0; }
+
+/* 날씨 영역 */
+.weather-area{ position: absolute; right: 0; width: 260px; height: 85px; margin-top: 34px; }
+.weather-area .weather{ position: absolute; line-height: 1.35em; }
+.weather-area img{ display: inline-block; vertical-align: top; margin-top: 4px; margin-left: 3px; }
+
+.weather-area .info-wrap{ position: absolute; left: 58px; max-width: 242px; margin: 5px 0 0 5px; }
+.weather-area .info-wrap .title{ font-size: 25px; font-weight: 700; margin-right: 5px;}
+.weather-area .info-wrap .desc{ font-size: 16px; letter-spacing: -0.1em; }
+.weather-area .info-wrap .msg{ display: flex; font-size: 13px; letter-spacing: -1px; margin-top: 7px; line-height: 1.35em;}
+.weather-area .info-wrap em{ color: #f10000;}
+
+
+/* 언어선택 영역 */
+.lang-area{ position: absolute; right: 0; top: 0; width: 110px; height: 21px; display: flex; }
+.lang-area #langList{ padding: 0 0 0 2px; width: 80px; height: 21px; line-height: 21px; font-size: 12px; border-color: #afcfea; color: #1e6cb3; }
+.lang-area #langList option{ white-space: nowrap; min-height: 1.2em; padding: 0 2px 1px; }
+.lang-area select{ appearance: none; background-size: 8px auto; -webkit-appearance: none; -moz-appearance: none; appearance: none; border-radius: 0; background-image: url('../images/select-ic.png'); background-repeat: no-repeat; background-position: 96% center; }
+.lang-area .btn-select{ display: inline-block; padding: 0; width: 30px; height: 21px; font-size: 11px; border: 0; color: #fff; background-color: #1e6cb3; }
+
+
+
+/* footer */
+.footer{ position: relative; top: 43px; border-top: 0; letter-spacing: normal;}
+
+
+/* footer info-area */
+.footer .info-area{ padding: 15px 0; display: flex; justify-content: space-between; align-items: center; }
+
+.footer .info-box{ position: relative; }
+.footer .info-box .info-list{ position: relative; display: flex; }
+.footer .info-box .info-item{ font-size: 12px; color: #636363; }
+.footer .info-box .info-item .active{ color: #000; font-weight: 700; }
+.footer .info-box .info-item a{
+    position: relative;
+    display: block;
+    padding-right: 10px;
+}
+.footer .info-box .info-item::after{
+    content: '';
+    top: 0; left: auto;
+    position: absolute;
+    width: 1px; height: 14px; background: #dcdcdc; }
+
+.footer .sns-box{ display: flex; gap: 12px; width: 204px; height: 24px; }
+.footer .sns-box .facebook{ width: 24px; height: 24px; background-position: -25px 0;}
+.footer .sns-box .twiter{ width: 24px; height: 24px; background-position: -50px 0;}
+.footer .sns-box .insta{ width: 24px; height: 24px; background-position: -75px 0;}
+.footer .sns-box .kakao{ width: 24px; height: 24px; background-position: -100px 0;}
+.footer .sns-box .youtube{ width: 24px; height: 24px; background-position: -125px 0;}
+.footer .sns-box .blog{ width: 24px; height: 24px; background-position: -150px 0;}
+
+
+
+/* footer cs-area */
+.cs-area{ position: relative; display: flex; justify-content: space-between; border-top: 1px solid #ccc; padding: 22px 0; color: #636363; }
+
+.cs-area .call-box{ width: 108px; height: 45px; margin-right: 40px; background-position: -180px 0; }
+
+.cs-area .address-box{ position: absolute; left: 148px; display: flex; flex-direction: column; gap: 2px; font-size: 12px; line-height: 1.35em; padding-bottom: 2px; }
+.cs-area .address-box .copy{ font-size: 11px; }
+.cs-area .address-box .map{ font-size: 11px; }
+
+.cs-area .mark-box{ position: absolute; right: 0; display: flex; }
+.cs-area .mark-box .web{ margin-left: 10px; }
+
+
+
+
