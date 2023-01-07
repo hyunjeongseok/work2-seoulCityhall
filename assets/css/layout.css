@@ -69,9 +69,9 @@
 .footer .info-box .info-item a{
     position: relative;
     display: block;
-    padding-right: 10px;
+    padding: 0 10px;
 }
-.footer .info-box .info-item::after{
+.footer .info-box .info-item+.info-item::after{
     content: '';
     top: 0; left: auto;
     position: absolute;

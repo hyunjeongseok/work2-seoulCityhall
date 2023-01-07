@@ -45,17 +45,25 @@ h1,h2,h3,strong,b{font-weight: 700;}
 .btn-search,
 .cs-area .call-box,
 .sc-board .link-plus,
-.sc-news .link-plus .ic-plus,
+.sc-news .link-plus,
 .sc-support .btn-nav.prev,
 .sc-support .btn-nav.next,
 .sc-support .autoplay.play,
-.sc-support .autoplay.stop,
+.sc-support .autoplay.stop
+
+    {
+    background-image: url('../images/sp-bg1.png');
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+}
+
+/* 메인슬라이드 Btn */
 .group-slide .btn-nav.prev,
 .group-slide .btn-nav.next,
 .group-slide .autoplay.active,
 .group-slide .autoplay
     {
-    background-image: url('../images/sp-bg1.png');
+    background-image: url('../images/icon_set_common_2019.png');
     background-repeat: no-repeat;
     background-size: 300px 300px;
 }

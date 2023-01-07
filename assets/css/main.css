@@ -18,8 +18,6 @@
 .sc-slide .group-slide.slide2 .title{top: 50%;}
 
 .sc-slide .group-slide p{ position: absolute; bottom: 0; left: 0;background: rgba(0,0,0,0.5); color: #fff; padding: 0 122px 0 10px; width: 100%; height: 40px; line-height: 40px; }
-.sc-slide .group-slide .control-area{ position: absolute; bottom: 0; right: 0; z-index: 1; }
-.group-slide .btn-nav{width: 18px; height: 18px;}
 
 .sc-slide .group-slide.slide1 .ic{ background-position: 0 0; }
 .sc-slide .group-slide.slide2 .ic{ background-position: -50px 0; }
@@ -29,16 +27,18 @@
 .sc-slide .group-slide.active .title{ background-color: #0158a8; color: #fff; }
 .sc-slide .group-slide.active .title::after{ content: ''; position: absolute; top: 50%; left: 99%; width: 0; height: 0; border-style: solid; border-width: 25px 0 25px 32px; border-color: transparent transparent transparent #0158a8; z-index: 10; margin-top: -25px; }
 
-.group-slide .control-area{position: absolute; width: 110px; height: 32px; display: flex; justify-content: flex-end; align-items: center; z-index: 10;}
-.group-slide .control-area::before{content: ''; position: absolute; top: 4px; right: 66px; width: 1px; height: 24px; background: rgba(255,255,255,0.5);}
-.group-slide .control-area .fraction{width: 100%;}
+.group-slide .control-area{position: absolute; bottom: 0; right: 0;  width: 110px; height: 40px; display: flex; justify-content: flex-end; align-items: center; z-index: 10;}
+.group-slide .control-area .fraction{ position: absolute; top: 30%;  left: 10px; width: initial; color: #fff;}
+
+.sc-slide .group-slide .btn-box::before{content: ''; position: absolute;top: 50%; left: -10px; transform: translateY(-50%); width: 1px; height: 24px; background: rgba(255,255,255,0.5);}
+.sc-slide .group-slide .btn-box{position: relative; height: 18px; width: 54px;}
+
+.group-slide .btn-nav{ position: absolute; display: inline-block; width: 18px; height: 18px;}
+.group-slide .btn-nav.prev{ left: -5px; background-position: -241px -285px; }
+.group-slide .btn-nav.next{right: 2px; background-position: -256px -285px;}
+
+.group-slide .autoplay{position: absolute; right: 20px; width: 18px; height: 18px; text-indent: -9999px; background-position: -269px -285px;}
 .group-slide .autoplay.active{background-position: -285px -285px;}
-.group-slide .autoplay{display: flex; background: #00f; width: 18px; height: 18px; text-indent: -9999px; position: absolute; bottom: 0; right: 0; background-position: -269px -285px;}
-
-.group-slide .btn-nav{ }
-.group-slide .btn-nav.prev{display: inline-block; width: 18px; height: 18px; left: 49px; background-position: -241px -285px; }
-.group-slide .btn-nav.next{display: inline-block; width: 18px; height: 18px; right: 2px; background-position: -256px -285px;}
-
 
 
 
@@ -130,17 +130,18 @@
 
 
 /* 자주 찾은 서비스 */
-.sc-often{width: 360px; position: relative;}
+.sc-often{width: 360px;}
 .sc-often .title{ padding-bottom: 5px; font-size: 24px; line-height: 1.35em; }
 .sc-often .often-list{ padding: 17px 5px 7px 20px; background: #eff4f8; display: flex; flex-wrap: wrap; }
-.sc-often .often-item{  font-size: 15px; width: 50%; padding: 0 0 10px 10px; color: #333; line-height: 1.35em; font-weight: 400; }
-.sc-often .often-item a::before{ position: absolute; content: ''; display: inline-block; width: 2px; height: 2px; background: #666; margin-top: -6px;}
+.sc-often .often-item{ position: relative; font-size: 15px; width: 50%; color: #333; line-height: 1.35em; font-weight: 400; }
+.sc-often .often-item::before{ position: absolute; top: 30%;  content: ''; display: inline-block; width: 2px; height: 2px; background: #666;}
+.sc-often .often-item a{ padding: 0 0 10px 10px; display: block;}
 
 
 /* 분야별 정보 */
-.sc-info{ padding-top: 40px; height: 185px; }
+.sc-info{ padding-top: 40px;}
 .sc-info .title{ font-size: 24px; padding-bottom: 20px; }
-.sc-info .service-list{ position: absolute; top: auto; left: 50%; transform: translateX(-50%); display: flex; gap: 59px; padding: 0 27px; }
+.sc-info .service-list{ display: flex; gap: 59px; padding: 0 27px; }
 .sc-info .service-item{ display: flex; text-align: center; }
 .sc-info .service-item a{ width: 100%; font-size: 16px; line-height: 1.35em; }
 .sc-info i{ display: block; background-repeat: no-repeat; width: 85px; height: 100px; }
@@ -156,10 +157,10 @@
 
 
 /* 새소식 */
-.sc-news{ position: relative; top: 43px; padding: 20px 0 30px; }
-.sc-news .title{
-    font-size: 24px;
-    padding-bottom: 20px;}
+.sc-news{ position: relative; padding: 50px 0 30px; }
+.sc-news .title{ font-size: 24px; padding-bottom: 20px;}
+.sc-news .link-plus{ display: inline-block; position: absolute; top: 58px; right: 0; height: 20px; font-size: 15px; color: #7d7d7d; width: 75px; background-position: 0 -259px;  }
+
 .sc-news .news-list{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 20px; }
 /* 말줄임은 desc로 추가하고 수정한다음, 서울시청과 차별점을 두기위해 말줄임 적용 유지 */
 .sc-news .img-box{ position: relative;  } 
@@ -172,12 +173,9 @@
 .sc-news .theme.house{background-color: #c35c3c;}
 .sc-news .theme.trafic{background-color: #337ee2;}
 
-.sc-news .link-plus{ position: absolute; top: 20px; right: 20px;; height: 20px; width: 100%; font-size: 15px; color: #7d7d7d; display: flex; justify-content: end; align-items: end; }
-.sc-news .link-plus .ic-plus{ position: absolute; right: -20px; background-position: 0 -259px; width: 75px; height: 75px; }
-
 
 /* inner3 공통 */
-.inner3{ position: relative; top: 43px; padding-bottom: 50px; display: flex; justify-content: space-between; border-bottom: 2px solid #222;}
+.inner3{ padding-bottom: 50px; display: flex; justify-content: space-between; border-bottom: 2px solid #222;}
 .inner3 .title{ padding-bottom: 11px; line-height: 1.35em; }
 
 /* 서울영상 */
@@ -212,8 +210,9 @@
 
 
 /* 서울시지원사업 - 슬라이드 */
-.sc-support{ position: relative; padding: 50px 0 50px 0;}
+.sc-support{padding: 50px 0;}
 .sc-support .control-area{
+    position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -223,19 +222,21 @@
 
 .sc-support .control-area .fraction{
     display: flex;
-    margin-right: 8px;
     font-size: 14px;
     width: initial;
+    padding-right: 10px;
     /* 초기화 initial */
+}
+.sc-support .control-area .btn-box{
+    height: 20px; width: 60px;
 }
 .sc-support .autoplay{ text-indent: -9999px; position: absolute; right: 20px; width: 20px; height: 20px; border: 1px solid #999; }
 .sc-support .autoplay.play{ display: none; background-position: -101px -43px; }
 .sc-support .autoplay.stop{ background-position: -65px -43px; }
 
-.sc-support .control-area{ position: relative; margin-top: 5px; height: 20px; }
-.sc-support .btn-nav{ position: absolute; right: 0; width: 20px; height: 20px; }
-.sc-support .btn-nav.prev{ position: absolute; right: 40px; background-position: -45px -43px; border: 1px solid #999; border-right: none; }
-.sc-support .btn-nav.next{ background-position: -86px -43px; border: 1px solid #999; border-left:none;}
+.sc-support .btn-nav{position: absolute; width: 20px; height: 20px; border: 1px solid #999;}
+.sc-support .btn-nav.prev{  right: 40px; background-position: -45px -43px;  border-right: none; }
+.sc-support .btn-nav.next{ right: 0; background-position: -86px -43px; border-left:none;}
 
 
 

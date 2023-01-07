@@ -1,10 +1,4 @@
-<!-- 
-    [sc-고유]모양새가같다면같게
-    [group-어디든이름이같을수있다] 추상적이름
-        [area-소단위묶기,연관이크게있다] 정확한이름
-         -wrap
-         -box  
--->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- script link 점수가 가장 낮아야함!-->
+    <!-- script-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
-    <!-- link -->
+    <!-- css -->
     <link rel="stylesheet" href="./assets/css/layout.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     
 </head>
 <body>
-    <!-- common-inner : width값 통일 -->
+    <!-- common-inner : width값 통일 영역 -->
     <header class="header">
         <div class="common-inner">
             <div class="group-flex1">
@@ -107,9 +101,11 @@
                                 <div class="fraction">
                                     <span class="curr">99</span>/<span class="total">99</span>
                                 </div>
-                                <a href="" class="btn-nav prev"><span class="blind">이전</span></a>
-                                <button class="autoplay" aria-label="슬라이드 정지"></button>
-                                <a href="" class="btn-nav next"><span class="blind">다음</span></a>
+                                <div class="btn-box">
+                                    <a href="" class="btn-nav prev"><span class="blind">이전</span></a>
+                                    <button class="autoplay" aria-label="슬라이드 정지"></button>
+                                    <a href="" class="btn-nav next"><span class="blind">다음</span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -131,14 +127,15 @@
                                 <div class="fraction">
                                     <span class="curr">99</span>/<span class="total">99</span>
                                 </div>
-                                <a href="" class="btn-nav prev"><span class="blind">이전</span></a>
-                                <button class="autoplay" aria-label="슬라이드 정지"></button>
-                                <a href="" class="btn-nav next"><span class="blind">다음</span></a>
+                                <div class="btn-box">
+                                    <a href="" class="btn-nav prev"><span class="blind">이전</span></a>
+                                    <button class="autoplay" aria-label="슬라이드 정지"></button>
+                                    <a href="" class="btn-nav next"><span class="blind">다음</span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                    
                 <div class="column-right">
                     <section class="sc-state">
                         <a href="" class="link-state">
@@ -196,8 +193,6 @@
                 <a href="" class="link-all">전체 누리집</a>
             </section>
         </div>
-
-
 
         <section class="inner-wrap">
             <h2 class="blind">코로나 지원 센터</h2>
@@ -264,7 +259,6 @@
                     </ul>
                     <a href="" class="link-plus"> <span class="blind">이벤트 신청 더보기</span> </a>
                 </section>
-
                 <section class="sc-often">
                     <h2 class="title">자주 찾은 서비스</h2>
                     <ul class="often-list">
@@ -372,7 +366,6 @@
             </section>
 
             <div class="inner3">
-
                 <section class="sc-media">
                     <h2 class="title">서울영상</h2>
                     <a href="" class="media-wrap">
@@ -399,13 +392,11 @@
                             <a href="" class="theme">보도자료</a>
                             <a href="" class="desc">`책읽는 서울광장`, 치유와 위안의 음악·심리학 강연 마련… 11월 13일 올해 운영 마무리</a>
                         </li>
-                
                     </ul>
                 </section>
                 <section class="sc-sns">
                     <a href="" class="sns-wrap">
                         <h2 class="title">서울시 SNS <i class="ic-seoul"></i></h2>
-                        
                     </a>
                     <ul class="sns-list">
                         <li class="sns-item"><a href="" class="insta"><span class="blind">서울시 인스타그램 바로가기</span></a></li>
@@ -416,8 +407,8 @@
                         <li class="sns-item"><a href="" class="kakao"><span class="blind">서울시 카카오스토리 바로가기</span></a></li>
                     </ul>
                 </section>
-
             </div>
+
             <section class="sc-support">
                 <h2 class="blind">서울시지원사업</h2>
                 <div class="swiper" id="supportSlide">
@@ -436,14 +427,16 @@
                     <div class="control-area">
                         <div class="fraction">
                         </div>
-                        <a href="" class="btn-nav prev"><span class="blind">이전</span></a>
-                        <button class="autoplay play ">슬라이드 시작</button>
-                        <button class="autoplay stop active">슬라이드 정지</button>
-                        <a href="" class="btn-nav next"><span class="blind">다음</span></a>
+                        <div class="btn-box">
+                            <a href="" class="btn-nav prev"><span class="blind">이전</span></a>
+                            <button class="autoplay play ">슬라이드 시작</button>
+                            <button class="autoplay stop active">슬라이드 정지</button>
+                            <a href="" class="btn-nav next"><span class="blind">다음</span></a>
+                        </div>
                     </div>
                 </div>
-                
             </section>
+
             <!-- 하단 메뉴바 -->
             <section class="sc-related">
                 <h2 class="blind">관련사이트</h2>
@@ -575,6 +568,7 @@
                         </div>
                     </li>
                 </ul>
+            </section>
         </div>
     </main>
 
