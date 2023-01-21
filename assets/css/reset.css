@@ -7,4 +7,11 @@ button {background:none;border:0;cursor:pointer;}
 a {text-decoration:none;}
 ul{list-style: none;}
 table {border-collapse:collapse;border-spacing:0;}
-body{font-family: 'Nanum Gothic', sans-serif;}
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #222;
+    letter-spacing: -0.05em;
+    min-width: 1152px;
+}
